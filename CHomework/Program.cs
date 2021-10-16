@@ -32,6 +32,15 @@ namespace CHomework
 
         public static double Median(List<int> arr)
         {
+            if(arr.Count == 1)
+            {
+                return arr[0];
+            }
+            if (arr.Count == 0)
+            {
+                return 0;
+            }
+
             arr.Sort();
 
             if (arr.Count % 2 == 0)
