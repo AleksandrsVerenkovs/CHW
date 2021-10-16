@@ -33,7 +33,7 @@ namespace CHomework.Tests
         }
 
         [Theory]
-        [MemberData(nameof(ArrayWithEvenAmount))]
+        [MemberData(nameof(ArrayWithOddAmount))]
         public void SecondTask_Median_ReturnMedianOfOddArray(List<int> a, List<int> b, List<int> c)
         {
             //Assert

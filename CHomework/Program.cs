@@ -36,7 +36,8 @@ namespace CHomework
 
             if (arr.Count % 2 == 0)
             {
-                return (arr[arr.Count / 2] + arr[(arr.Count / 2) - 1]) / 2;
+                //return (arr[arr.Count / 2] + arr[(arr.Count / 2) - 1]) / 2;
+                return Math.Round((double)(arr[arr.Count / 2] + arr[(arr.Count / 2) - 1]) / 2, 2);
             }
             else
             {
