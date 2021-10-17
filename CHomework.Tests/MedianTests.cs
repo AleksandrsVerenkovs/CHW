@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CHW;
 using Xunit;
 
 namespace CHomework.Tests
@@ -43,9 +44,9 @@ namespace CHomework.Tests
         public void SecondTask_Median_ReturnMedianOfEvenArray(List<int> a, List<int> b, List<int> c)
         {
             //Assert
-            Assert.True(Program.Median(a) == 1.5);
-            Assert.True(Program.Median(b) == 4.5);
-            Assert.True(Program.Median(c) == 5.5);
+            Assert.True(CsharpTasks.Median(a) == 1.5);
+            Assert.True(CsharpTasks.Median(b) == 4.5);
+            Assert.True(CsharpTasks.Median(c) == 5.5);
         }
 
         [Theory]
@@ -53,9 +54,9 @@ namespace CHomework.Tests
         public void SecondTask_Median_ReturnMedianOfOddArray(List<int> a, List<int> b, List<int> c)
         {
             //Assert
-            Assert.True(Program.Median(a) == 2);
-            Assert.True(Program.Median(b) == 4);
-            Assert.True(Program.Median(c) == 5);
+            Assert.True(CsharpTasks.Median(a) == 2);
+            Assert.True(CsharpTasks.Median(b) == 4);
+            Assert.True(CsharpTasks.Median(c) == 5);
         }
 
         [Theory]
@@ -63,7 +64,7 @@ namespace CHomework.Tests
         public void SecondTask_Median_ReturnArrayValue(List<int> a)
         {
             //Assert
-            Assert.True(Program.Median(a) == a[0]);
+            Assert.True(CsharpTasks.Median(a) == a[0]);
         }
 
         [Theory]
@@ -71,7 +72,7 @@ namespace CHomework.Tests
         public void SecondTask_Median_ReturnZero(List<int> a)
         {
             //Assert
-            Assert.True(Program.Median(a) == 0);
+            Assert.True(CsharpTasks.Median(a) == 0);
         }
     }
 }

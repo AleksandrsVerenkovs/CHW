@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CHW;
 using Xunit;
 
 namespace CHomework.Tests
@@ -25,7 +26,7 @@ namespace CHomework.Tests
             //Arrange
             var expected = new List<int> { 3, 2, 1, 0 };
             //Act
-            var actual = Program.StructuredArray(initial);
+            var actual = CsharpTasks.StructuredArray(initial);
             //Assert
             Assert.Equal(expected, actual);
         }
@@ -37,7 +38,7 @@ namespace CHomework.Tests
             //Arrange
             var expected = new List<int> { 5, 2, 3, 1 };
             //Act
-            var actual = Program.StructuredArray(initial);
+            var actual = CsharpTasks.StructuredArray(initial);
             //Assert
             Assert.Equal(expected, actual);
         }
