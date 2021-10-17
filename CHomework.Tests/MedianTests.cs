@@ -63,7 +63,7 @@ namespace CHomework.Tests
         public void SecondTask_Median_ReturnArrayValue(List<int> a)
         {
             //Assert
-            Assert.True(Program.Median(a) == 2);
+            Assert.True(Program.Median(a) == a[0]);
         }
 
         [Theory]

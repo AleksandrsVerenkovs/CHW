@@ -22,8 +22,7 @@ namespace CHomework
             }
 
             var numbers = arr.Where(num => num > 0).ToList();
-            var step = arr.Count - numbers.Count;
-            for (int i = 0; i < step; i++)
+            for (int i = 0; i < arr.Count - numbers.Count; i++)
             {
                 numbers.Add(0);
             }
@@ -45,7 +44,6 @@ namespace CHomework
 
             if (arr.Count % 2 == 0)
             {
-                //return (arr[arr.Count / 2] + arr[(arr.Count / 2) - 1]) / 2;
                 return Math.Round((double)(arr[arr.Count / 2] + arr[(arr.Count / 2) - 1]) / 2, 2);
             }
             else
