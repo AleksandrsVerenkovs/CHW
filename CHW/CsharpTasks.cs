@@ -22,7 +22,6 @@ namespace CHW
             }
             return numbers;
         }
-
         public static double Median(List<int> arr)
         {
             if (arr.Count == 1)
